@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    container_name: db_billar_v3
+    restart: always
+    ports:
+      - "5440:5432"
+    environment:
+      POSTGRES_PASSWORD: 8203
+      POSTGRES_USER: nian
+      POSTGRES_DB: db_billar_v3
